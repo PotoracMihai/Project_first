@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 namespace lesson_3
 {
     class Program
@@ -7,8 +6,6 @@ namespace lesson_3
         static void Main(string[] args)
         {
             Cars auto = new Cars { };
-
-
             Console.WriteLine("                                                                                         ");
             Console.WriteLine("*******************************" + "      Your chosen filtres        " + "*************************");
             Console.WriteLine("The color is: " + auto.color);
@@ -33,24 +30,19 @@ namespace lesson_3
         {
             
             Console.WriteLine("Enter a color for you car (red, blue, green, yellow, black, white, gray, brown): ");
-            color = Console.ReadLine();
-           // File.WriteAllText("output.txt",color);
+            color = Console.ReadLine();          
         
             Console.WriteLine("Enter a model for you car (sedan, hack back, crossover, AWD): ");
             model = Console.ReadLine();
-           // File.WriteAllText("output.txt", model);
 
             Console.WriteLine("Enter a categori for you car (A, B, C, D): ");
             category = Convert.ToChar(Console.ReadLine());
-            //File.WriteAllText("output.txt", category);
 
             Console.WriteLine("Enter a type of body for you car (long or short): ");
             body = Console.ReadLine();
-           // File.WriteAllText("output.txt", body);
 
             Console.WriteLine("Enter a number of seats (2, 4, 5, 7): ");
             seats = Convert.ToInt32(Console.ReadLine());
-           // File.WriteAllText("output.txt", seats);
 
             Console.WriteLine("Enter a price do you want (3000$ up to 50000$): ");
             price = Convert.ToInt32(Console.ReadLine());
