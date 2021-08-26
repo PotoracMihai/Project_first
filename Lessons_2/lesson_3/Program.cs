@@ -46,8 +46,9 @@ namespace lesson_3
 
             Console.WriteLine("Enter a price do you want (3000$ up to 50000$): ");
             price = Convert.ToInt32(Console.ReadLine());
+
                
-                if (price > 3000 &&  price < 50000 )
+                if (price >= 3000 &&  price <= 50000 )
                 {
                     Console.WriteLine("The price is corect !!!");
                 }
@@ -56,6 +57,45 @@ namespace lesson_3
                     Console.WriteLine("The price is lower or to bigger ");
                 
                 }
+
+
+            if (seats == 2)
+            {
+                Console.WriteLine("Corect number of the seats: " + seats);
+            }
+            else if(seats == 4)
+            {
+                Console.WriteLine("Corect number of the seats: " + seats);
+            }
+            else if (seats == 5)
+            {
+                Console.WriteLine("Corect number of the seats: " + seats);
+            }else if(seats == 7)
+            {
+                Console.WriteLine("Corect number of the seats: " + seats);
+            }
+            else
+            {
+                Console.WriteLine("The number of seats is incorect !!!");
+            }
+
+            if (category == 'A')
+            {
+                Console.WriteLine("Corect category !"+ " "+category);
+            }else if (category == 'B')
+            {
+                Console.WriteLine("Corect category !" + " " + category);
+            }else if(category == 'C')
+            {
+                Console.WriteLine("Corect category !" + " " + category);
+            }else if (category == 'D')
+            {
+                Console.WriteLine("Corect category !" + " " + category);
+            }
+            else
+            {
+                Console.WriteLine("Incorect category !!!");
+            }
             }
         
 
